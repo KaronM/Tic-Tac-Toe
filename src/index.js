@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Game from './Components/game';
+//making class components, must always have render and constructor classes
+//Making components always have names that start with uppercases
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+//dom renderer. 
+//purpose of react strict tag is to wrap application code to run additional life cycle checks 
+const game = ReactDOM.createRoot(document.getElementById('game'));
+game.render(
   <React.StrictMode>
-    <App />
+    <Game/>
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
